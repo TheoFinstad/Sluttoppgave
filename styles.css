@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=8f9a38e7d5&attid=0.1&permmsgid=msg-a:r-4423156066454080434&th=18fecb00ee89eda3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8FY9e_pZm-ELEhSbJkajpG_A15jgIy1PFKfqclPMOB00qBq3uoVnw_cFVB7BptWLqspdWZHACCLED94OJQtCP4jhDz_MMc4ky5NJPOzLa7IoJcLOsUFMjLQBU&disp=emb&realattid=18fecaff5711cb379621'); /* Sett inn din egen bilde-URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent bakgrunn */
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 2em;
+    background: none;
+    padding: 0.5em;
+    transition: background 0.3s ease;
+}
+
+.hamburger:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#menu.show {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#menu li {
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#menu li:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent bakgrunn */
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+.text-box {
+    background: white;
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.text-box textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tittel på siden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li onclick="navigateTo('index.html')">Hovedside</li>
+                <li onclick="navigateTo('yff.html')">Yff</li>
+                <li onclick="navigateTo('medieproduksjon.html')">Medieproduksjon</li>
+                <li onclick="navigateTo('teknologiforstaelse.html')">Teknologiforståelse</li>
+                <li onclick="navigateTo('programmering.html')">Programmering</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Programmering</h1>
+        <div class="text-box" id="textBox">
+            <!-- Ditt innhold her -->
+             I programmering har vi gjort en del. Vi har lært mye om Javascript. Vi har brukt array og console log. Jeg skjønner ikke alt helt enda men jeg blir bedre på det. Vi har også jobbet litt med css og html. Det har vært en oppgave vær uke og jeg har prøvd å få gjort den ferdig.
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
